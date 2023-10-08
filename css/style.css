@@ -1,0 +1,158 @@
+:root {
+    --theme-color: #1A237E;
+    --color-muted: grey
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.grid {
+    /* border-bottom: 1px dotted var(--theme-color); */
+    padding-bottom: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    /* margin: 2% 16% 10% 16%; */
+}
+
+.grid {
+    display: grid;
+}
+
+
+
+.thick-border {
+    border: 5px solid var(--theme-color);
+}
+
+.thin-border {
+    border: 1px solid var(--theme-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.color-muted {
+    color: var(--color-muted)
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-theme {
+    background-color: var(--theme-color)
+}
+
+.text-theme {
+    color: var(--theme-color)
+}
+
+.text-white {
+    color: white
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.border-radius-1 {
+    border-radius: 5px;
+}
+
+.thick-underline {
+    border-bottom: 5px double var(--theme-color);
+    /* display: inline; */
+    padding-bottom: 7px;
+}
+
+.ms-1 {
+    margin-left: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 16px;
+}
+
+
+
+td {
+    font-size: 14px;
+}
+
+.vertical-top td {
+    vertical-align: top;
+}
+
+/* .ellipsis {
+    width: 30ch;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+} */
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        margin: 2% 16% 10% 16%;
+    }
+
+    .col-2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        text-align: center;
+    }
+
+    .col-2 {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .overflow-x-scroll {
+        overflow-x: scroll;
+    }
+}
+
+.shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.30);
+}
+
+h1 {
+    margin: 8px;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+*{
+line-height: 1.5;
+}
