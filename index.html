@@ -158,7 +158,7 @@
                     <td>1.</td>
                     <td>Wunderkinds Technologies Dhule, Maharashtra.</td>
                     <td>Web Developer</td>
-                    <td>4 Years & 9 Months</td>
+                    <td><span id="expYear"></span> Years</td>
                     <td>01/2019 - Present</td>
                 </tr>
             </table>
@@ -185,6 +185,10 @@
         <!-- /Posts -->
 
     </div>
+    <script>
+        currentYear = new Date().getFullYear();
+        document.getElementById("expYear").innerHtml = currentYear-2019;
+    </script>
 </body>
 
 </html>
