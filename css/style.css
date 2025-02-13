@@ -95,7 +95,8 @@ td {
 
 
 
-td,p {
+td,
+p {
     font-size: 14px;
 }
 
@@ -127,9 +128,10 @@ td,p {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-     .container {
+    .container {
         padding: 2%;
     }
+
     .grid {
         display: grid;
         text-align: center;
@@ -152,10 +154,39 @@ h1 {
     margin: 8px;
 }
 
-li{
+li {
     margin-bottom: 10px;
 }
 
-*{
-line-height: 1.5;
+* {
+    line-height: 1.5;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 16px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
