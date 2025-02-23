@@ -46,6 +46,7 @@
     font-size: large;
     cursor: pointer;
     margin-top: 12px;
+    text-decoration: none;
 }
 
 .bg-white {
